@@ -92,7 +92,7 @@ def test(play_state,file_temp,file_per):
     a = get_list_action(play_state)
     
     if len(file_temp) < 2:
-        file_temp = np.load('f{path_save_player}CK_Win.npy',allow_pickle=True)
+        file_temp = np.load(f'{path_save_player}CK_Win.npy',allow_pickle=True)
         # file_temp = file[np.where(file_2[1] == max(file_2[1]))[0][0]]
     
     Result_matran1 = np.matmul(play_state, file_temp[0])
